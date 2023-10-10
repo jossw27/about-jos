@@ -19,19 +19,43 @@ h1 {
   margin-bottom: 10px;
 }
 
-
-
 #hero-banner {
   padding:0%;
   font-family: Arial, Helvetica, sans-serif;
-  height: 5%;
-  width: 25%;
+  height: 30%;
+  width: 30%;
   flex-direction: row;
-  text-align: left;
-  margin-bottom: 25px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: rgb(11, 82, 91);
   
  }
+ /* Adding banner to page  */
+ header{
+    position: relative;
+    height: 400px; 
+    overflow: hidden;
+}
+
+ header img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+}
+
+/* adding central area for text on header */
+.text-overlay {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  color: #000000; 
+  padding: 0px;
+  border-radius: 100px; /* Optional: Adds rounded corners to the overlay */
+  }
 
 .menu {
   background-color: rgb(39, 38, 64); /* Set background color */
