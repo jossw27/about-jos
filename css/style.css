@@ -133,23 +133,6 @@ h2{
   
 }
 
- .work {
-  grid-area: work;
-  min-height: 400px;
-  flex-basis: 50%;
-  text-align: center;
-} 
-
-.contact {
-  padding: 31px;
-  
-}
-
-.portfolio {
-  padding-left: 20px;
-}
-
- 
 
 h1,
 h2,
