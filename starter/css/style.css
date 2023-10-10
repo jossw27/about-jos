@@ -3,12 +3,122 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
+  background-color: rgb(250, 243, 221)
+
 }
 
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#hero-banner {
+  padding:0%;
+  font-family: sans-serif;
+  height: 5%;
+  width: 25%;
+  flex-direction: row;
+  text-align: left;
+  margin-bottom: 25px;
+  background-color: rgb(11, 82, 91);
+ }
+
+.menu {
+  background-color: rgb(39, 38, 64); /* Set background color */
+  text-align: right;
+  flex-wrap: nowrap;  /* moving menu to be "thumb friendly for mobile users */
+  width: 100%;
+}
+
+
+.menu ul {
+  list-style-type: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+  
+}
+
+.menu li {
+  display: inline-block; 
+  margin-right: 10px;
+}
+
+.menu a {
+  text-decoration: none; 
+  color: #fff; 
+  padding: 10px 20px;
+  display: block; 
+  
+}
+
+ /* Change background color on hover */
+.menu a:hover {
+  background-color: rgb(62, 31, 71);
+}
+
+@media screen and (max-width:900px) {
+ .menu {
+  width:100%;
+  height: auto;
+  position: relative;
+ } 
+}
+/* Adding main body of page as a row format  */
+.page-section{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adding space between sections */
+}
+
+/* adding a simple line to section off section titles and text */
+.title {
+  border-right: 2px solid;
+ 
+}
+
+h2{
+  flex:1;
+ }
+
+ .content{
+  flex: 10; /*Content box spacing */
+  border: 1px solid #ccc; 
+  padding: 20px; /* Add some space around the content */
+  margin-left: 50px; /* Adding space between title and content */
+ }
+
+ .about-me{
+  grid-area: about-me;
+  min-height: 400px;
+  flex-basis: 50%;
+  text-align: center;
+  
+}
+
+ .work {
+  grid-area: work;
+  min-height: 400px;
+  flex-basis: 50%;
+  text-align: center;
+} 
+
+.contact {
+  grid-area: contact;
+  min-height: 100px;
+  flex-basis: 20%;
+  text-align: center;
+  
+}
+
+
+
+ 
 
 h1,
 h2,
@@ -21,4 +131,10 @@ h6 {
 
 p {
   margin: 0;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;  
+  padding: 10px;
 }
