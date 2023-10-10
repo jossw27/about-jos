@@ -13,20 +13,24 @@ body {
 
 }
 
+
 h1 {
   font-size: 2em;
   margin-bottom: 10px;
 }
 
+
+
 #hero-banner {
   padding:0%;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   height: 5%;
   width: 25%;
   flex-direction: row;
   text-align: left;
   margin-bottom: 25px;
   background-color: rgb(11, 82, 91);
+  
  }
 
 .menu {
@@ -74,12 +78,15 @@ h1 {
   display: flex;
   align-items: center;
   margin-bottom: 20px; /* Adding space between sections */
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* adding a simple line to section off section titles and text */
 .title {
   border-right: 2px solid;
- 
+ padding-right: 100px;
+ white-space: nowrap;
 }
 
 h2{
@@ -89,8 +96,9 @@ h2{
  .content{
   flex: 10; /*Content box spacing */
   border: 1px solid #ccc; 
-  padding: 20px; /* Add some space around the content */
+  padding: 20px; 
   margin-left: 50px; /* Adding space between title and content */
+  font-family: sans-serif;
  }
 
  .about-me{
@@ -109,14 +117,13 @@ h2{
 } 
 
 .contact {
-  grid-area: contact;
-  min-height: 100px;
-  flex-basis: 20%;
-  text-align: center;
+  padding: 31px;
   
 }
 
-
+.portfolio {
+  padding-left: 20px;
+}
 
  
 
