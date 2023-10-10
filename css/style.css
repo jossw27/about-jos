@@ -9,18 +9,16 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-  background-color: rgb(250, 243, 221)
-
+  background-color: rgb(250, 243, 221);
 }
-
 
 h1 {
   font-size: 2em;
   margin-bottom: 10px;
 }
-
+/* creating banner to sit centrally  */
 #hero-banner {
-  padding:0%;
+  padding: 0%;
   font-family: Arial, Helvetica, sans-serif;
   height: 30%;
   width: 30%;
@@ -29,76 +27,73 @@ h1 {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: rgb(11, 82, 91);
-  
- }
- /* Adding banner to page  */
- header{
-    position: relative;
-    height: 400px; 
-    overflow: hidden;
+}
+/* Adding banner to page  */
+header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+/* adding image to header */
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
- header img{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; 
-}
-
-/* adding central area for text on header */
+/* adding central area for text to go over the header */
 .text-overlay {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   text-align: center;
-  color: #000000; 
+  color: #000000;
   padding: 0px;
-  border-radius: 100px; /* Optional: Adds rounded corners to the overlay */
-  }
+  border-radius: 100px; /* adding rounded corners*/
+}
 
+/* adding navigation menu */
 .menu {
-  background-color: rgb(39, 38, 64); /* Set background color */
+  background-color: rgb(39, 38, 64);
   text-align: right;
-  flex-wrap: nowrap;  /* moving menu to be "thumb friendly for mobile users */
+  flex-wrap: nowrap; /* moving menu to be "thumb friendly for mobile users */
   width: 100%;
 }
 
-
 .menu ul {
-  list-style-type: none; /* Remove default list styles */
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  
 }
 
 .menu li {
-  display: inline-block; 
+  display: inline-block;
   margin-right: 10px;
 }
 
 .menu a {
-  text-decoration: none; 
-  color: #fff; 
+  text-decoration: none;
+  color: #fff;
   padding: 10px 20px;
-  display: block; 
-  
+  display: block;
 }
 
- /* Change background color on hover */
+/* Change background color on hover */
 .menu a:hover {
   background-color: rgb(62, 31, 71);
 }
 
-@media screen and (max-width:900px) {
- .menu {
-  width:100%;
-  height: auto;
-  position: relative;
- } 
+@media screen and (max-width: 900px) {
+  .menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
 }
 /* Adding main body of page as a row format  */
-.page-section{
+.page-section {
   display: flex;
   align-items: center;
   margin-bottom: 20px; /* Adding space between sections */
@@ -109,46 +104,38 @@ h1 {
 /* adding a simple line to section off section titles and text */
 .title {
   border-right: 2px solid;
- padding-right: 100px;
- white-space: nowrap;
+  padding-right: 100px;
+  white-space: nowrap;
 }
 
-h2{
-  flex:1;
- }
+h2 {
+  flex: 1;
+}
 
- .content{
+.content {
   flex: 10; /*Content box spacing */
-  border: 1px solid #ccc; 
-  padding: 20px; 
+  border: 1px solid #ccc;
+  padding: 20px;
   margin-left: 50px; /* Adding space between title and content */
   font-family: sans-serif;
- }
+}
 
- .about-me{
+.about-me {
   grid-area: about-me;
   min-height: 400px;
   flex-basis: 50%;
   text-align: center;
-  
 }
 
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-footer{
-  position: fixed;
-  bottom: 0;  
-  padding: 10px;
+/* Adding footer to complete page */
+footer {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(104, 176, 171);
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
